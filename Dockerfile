@@ -1,4 +1,4 @@
-FROM cloudflare:latest
+FROM --platform=arm64
 
 # Instalar sudo (ejemplo con Ubuntu)
 RUN apt-get update && apt-get install -y sudo
