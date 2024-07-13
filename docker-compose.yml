@@ -16,6 +16,7 @@ services:
   app:
     image: nextcloud
     restart: always
+    command: sudo docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiYmNjN2ViZmFjYTVkODg4Mzc5NjgxNWM5YTI1NWM1MDIiLCJ0IjoiODg3ZWY4MWMtZGQ0MS00OGJhLTk3NjgtYjAwMDA2NDU0NDBjIiwicyI6Ik5EZzRPVGc0TkRJdFpEWTVZeTAwTkdNNExXRmxNalF0WVRRelpUZG1OemRoTTJGbSJ9
     ports:
       - 8080:80
     links:
