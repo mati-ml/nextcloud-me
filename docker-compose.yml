@@ -28,7 +28,7 @@ services:
       - MYSQL_USER=matias
       - MYSQL_HOST=db
   flare:
-    image: Dockerfile
+    image: dockerfile
     restart: always
 
 volumes:
